@@ -15,16 +15,23 @@
   </head>
   <body class="font-secondary">
     
-      <nav></nav>
-      <div class="relative bg-banner flex">
+      <nav class="relative z-50 ">
+        <div class="absolute p-4">
+          <img src="./src/Assets/logo-navigation.png" alt="brand logo">
+        </div>
+        <div class="absolute right-0 p-4">
+          <img src="./src/Assets/menu.svg" alt="" class="w-6 h-6 right-0">
+        </div>
+      </nav>
+      <div class="relative bg-banner flex w-full object-left-top bg-opacity-50">
         <img
-          src="./src/Assets/logo-banner.svg"
+          src="./src/Assets/logo-banner.png"
           alt="Powdered Toast Logo"
-          class="w-32 m-auto fill-white bg-white align-middle"
+          class="w-40 m-auto text-white align-middle"
         />
       </div>
       <!-- About Section -->
-      <div class="container m-auto w-full bg-white ">
+      <div class="container m-auto  lg:w-1/2 bg-white ">
         <div id="about" class="m-auto w-1/2 -translate-y-8 bg-white rounded-lg">
           <p class="font-primary text-center text-4xl text-poweredRed">About</p>
           <p class="font-primary text-center text-4xl text-poweredRed">
