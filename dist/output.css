@@ -847,6 +847,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   fill: #fff;
 }
 
+.fill-blue-500 {
+  fill: #3b82f6;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -885,6 +889,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .text-left {
@@ -977,6 +989,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-cyan-200 {
+  --tw-text-opacity: 1;
+  color: rgb(165 243 252 / var(--tw-text-opacity));
 }
 
 .underline {
