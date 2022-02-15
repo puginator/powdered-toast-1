@@ -45,16 +45,12 @@ thumbsContainer.forEach(thumb => {
 
     thumb.addEventListener('click', () => {
 
-        if (activeImages.length > 0) {
-            console.log(activeImages)
+        while (activeImages.length > 0) {
             activeImages[0].classList.remove('thumbs-active');
-
         }
 
         if (thumb.classList.contains('thumbs-active')) {
             thumb.classList.remove('thumbs-active');
-            thumb.children[0].classList.add('invisible');
-            thumb.classList.add('opacity-50');
 
         } else {
             thumb.classList.add('thumbs-active');
