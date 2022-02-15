@@ -5,7 +5,7 @@ const menuItems = document.querySelectorAll('.mobile-menu-item');
 const leftCarousel = document.querySelector('.carousel-left');
 const rightCarousel = document.querySelector('.carousel-right');
 const copyright = document.getElementById('copyrightYear');
-
+const thumbsContainer = document.querySelectorAll('.thumbs');
 
 
 // Nav Bar menu and button 
@@ -39,6 +39,14 @@ rightCarousel.addEventListener('click', () => {
     console.log('clicked')
 
 });
+
+//Carousel Thumbnail Function
+thumbsContainer.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+        console.log('clicked')
+        thumb.className = 'active'
+    })
+})
 
 // Copyright Year
 
