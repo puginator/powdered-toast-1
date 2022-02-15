@@ -16,30 +16,30 @@
   <body class="font-secondary scroll-smooth">
     <header class="bg-banner relative ">
 
-    <nav class="relative z-40">
+    <nav class=" z-40 sticky top-0">
       <!-- Desktop Nav Menu  -->
-      <div class="hidden md:block p-4">
+      <div class="hidden md:block p-4 ">
         <ul
         class="font-medium text-white text-center text-base flex tracking-widest  w-4/6 m-auto justify-between   p-4"
         >
-        <li class="-translate-y-2">
+        <li class="-translate-y-2 hover:text-poweredRed">
           <a href="#about">
             <img src="./src/Assets/logo-navigation-white.png" alt="brand logo" class="w-10" />
           </a>
         </li>
-        <li class="mb-5 ">
+        <li class="mb-5 hover:text-poweredRed hover:underline hover:decoration-poweredRed">
           <a href="#about" class="mobile-menu-item">About</a>
         </li>
-        <li class="mb-5 ">
+        <li class="mb-5 hover:text-poweredRed hover:underline hover:decoration-poweredRed">
           <a href="#eatit" class="mobile-menu-item">Eat it</a>
         </li>
-        <li class="mb-5 ">
+        <li class="mb-5 hover:text-poweredRed hover:underline hover:decoration-poweredRed">
           <a href="#makeit" class="mobile-menu-item">Make it</a>
         </li>
-        <li class="mb-5 ">
+        <li class="mb-5 hover:text-poweredRed hover:underline hover:decoration-poweredRed">
           <a href="#pairit" class="mobile-menu-item">Pair it</a>
         </li>
-        <li class="mb-5">
+        <li class="mb-5 hover:text-poweredRed hover:underline hover:decoration-poweredRed">
           <a href="#newsletter" class="mobile-menu-item">Newsletter</a>
         </li>
       </ul>
@@ -104,7 +104,7 @@
         alt="Powdered Toast Logo"
         class="w-60 m-auto align-middle"
       />
-      <a href="#about" class="w-10 absolute bottom-16 left-1/2 -translate-x-4">
+      <a href="#about" class="w-10 absolute bottom-16 left-1/2 -translate-x-4 animate-bounce">
         <img src="./src/Assets/down-arrow.png" alt="down arrow" />
       </a>
     </div>
@@ -162,16 +162,16 @@
         <p class="font-primary text-poweredRed text-4xl md:w-2/3">
           powdered toast
         </p>
-        <p class="text-lightGray text-sm md:w-2/3 mt-5">
+        <p class="text-lightGray text-sm md:w-2/3 my-5">
           There are countless ways to prepare a good meal of powdered toast.
           Here are just a few of the most popular methods.
         </p>
-        <div id="eatit-thumbs" class="invisible md:visible">
+        <div id="eatit-thumbs" class="hidden md:block">
           <div
-            class="flex mt-5 cursor-pointer thumbs"
+            class="flex mt-5 cursor-pointer thumbs thumbs-active "
             onclick='changeImage("./src/Assets/make-it-1-maple.jpg")'
           >
-          <span class=" visible bg-poweredRed text-poweredRed w-1 h-10 mr-2"></span>
+          <span class=" bg-poweredRed text-poweredRed w-1 h-10 mr-2"></span>
             <img
               src="./src/Assets/make-it-1-maple-thumb.jpg"
               alt="french toast thumbnail"
@@ -190,7 +190,7 @@
             class="flex mt-5 cursor-pointer opacity-50 thumbs"
             onclick='changeImage("./src/Assets/make-it-2-sans.jpg")'
           >
-          <span class="invisible hover:visible bg-poweredRed text-poweredRed w-1 h-10 mr-2"></span>
+          <span class="invisible bg-poweredRed text-poweredRed w-1 h-10 mr-2"></span>
             <img
               src="./src/Assets/make-it-2-sans-thumb.jpg"
               alt="french toast thumbnail"
@@ -263,7 +263,7 @@
           />
         </span>
         <div
-          class="flex mt-5"
+          class="flex flex-col mt-5 thumb"
           onclick='changeImage("./src/Assets/make-it-1-maple.jpg")'
         >
           <img
@@ -271,9 +271,10 @@
             alt="french toast thumbnail"
             class="w-10 h-10 rounded-md mr-4"
           />
+          <div class=" bg-poweredRed text-poweredRed w-10 h-1 mt-2"></div>
         </div>
         <div
-          class="flex mt-5"
+          class="flex flex-col mt-5 thumb opacity-50"
           onclick='changeImage("./src/Assets/make-it-2-sans.jpg")'
         >
           <img
@@ -281,9 +282,11 @@
             alt="french toast thumbnail"
             class="w-10 h-10 rounded-md mr-4"
           />
+          <div class="invisible bg-poweredRed text-poweredRed w-10 h-1 mt-2"></div>
         </div>
+
         <div
-          class="flex mt-5"
+          class="flex flex-col mt-5 thumb opacity-50"
           onclick='changeImage("./src/Assets/make-it-3-fruit.jpg")'
         >
           <img
@@ -291,12 +294,15 @@
             alt="french toast thumbnail"
             class="w-10 h-10 rounded-md mr-4"
           />
+          <div class="invisible bg-poweredRed text-poweredRed w-10 h-1 mt-2"></div>
         </div>
+
         <span
           class="absolute top-10 transform translate-x-6 -translate-y-5 right-10 carousel-right"
         >
           <img src="./src/Assets/circle-right.svg" class="w-10" />
         </span>
+      </div>
       </div>
       <!-- Make it Section -->
       <div

@@ -42,9 +42,20 @@ rightCarousel.addEventListener('click', () => {
 
 //Carousel Thumbnail Function
 thumbsContainer.forEach(thumb => {
+
     thumb.addEventListener('click', () => {
-        console.log('clicked')
-        thumb.className = 'active'
+
+        if (thumb.classList.contains('thumbs-active')) {
+            thumb.classList.remove('thumbs-active');
+            thumb.children[0].classList.add('invisible');
+            thumb.classList.add('opacity-50');
+
+        } else {
+            thumb.classList.add('thumbs-active');
+            thumb.classList.remove('opacity-50');
+            thumb.children[0].classList.remove('invisible');
+        }
+
     })
 })
 
