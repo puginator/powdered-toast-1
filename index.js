@@ -6,7 +6,7 @@ const leftCarousel = document.querySelector('.carousel-left');
 const rightCarousel = document.querySelector('.carousel-right');
 const copyright = document.getElementById('copyrightYear');
 const thumbsContainer = document.querySelectorAll('.thumbs');
-
+const activeImages = document.getElementsByClassName('thumbs-active');
 
 // Nav Bar menu and button 
 
@@ -45,6 +45,12 @@ thumbsContainer.forEach(thumb => {
 
     thumb.addEventListener('click', () => {
 
+        if (activeImages.length > 0) {
+            console.log(activeImages)
+            activeImages[0].classList.remove('thumbs-active');
+
+        }
+
         if (thumb.classList.contains('thumbs-active')) {
             thumb.classList.remove('thumbs-active');
             thumb.children[0].classList.add('invisible');
@@ -52,8 +58,7 @@ thumbsContainer.forEach(thumb => {
 
         } else {
             thumb.classList.add('thumbs-active');
-            thumb.classList.remove('opacity-50');
-            thumb.children[0].classList.remove('invisible');
+
         }
 
     })

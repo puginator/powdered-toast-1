@@ -523,6 +523,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: sticky;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -557,10 +561,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .right-10 {
   right: 2.5rem;
-}
-
-.top-0 {
-  top: 0px;
 }
 
 .z-40 {
@@ -624,6 +624,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 2.5rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -638,10 +642,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-24 {
   margin-bottom: 6rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
 }
 
 .flex {
@@ -678,10 +678,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-96 {
   height: 24rem;
-}
-
-.h-2 {
-  height: 0.5rem;
 }
 
 .w-4\/6 {
@@ -1080,6 +1076,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .thumbs-active {
+  opacity: 1;
+}
+
+.thumbs-active>span {
+  visibility: visible;
 }
 
 .hover\:text-poweredRed:hover {
