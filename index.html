@@ -14,11 +14,36 @@
     <title>Powdered Toast</title>
   </head>
   <body class="font-secondary scroll-smooth">
+    <header class="bg-banner relative">
+
     <nav class="relative z-40">
-      <div class="absolute p-4">
-        <a href="#about">
-          <img src="./src/Assets/logo-navigation.png" alt="brand logo" />
-        </a>
+      <!-- Desktop Nav Menu  -->
+      <div class="hidden md:block p-4">
+        <ul
+        class="font-semibold text-white text-center text-base flex justify-center align-middle tracking-widest"
+        >
+        <li>
+          <a href="#about">
+            <img src="./src/Assets/logo-navigation.png" alt="brand logo" />
+          </a>
+        </li>
+        <li class="mb-5">
+          <a href="#about" class="mobile-menu-item">About</a>
+        </li>
+        <li class="mb-5">
+          <a href="#eatit" class="mobile-menu-item">Eat it</a>
+        </li>
+        <li class="mb-5">
+          <a href="#makeit" class="mobile-menu-item">Make it</a>
+        </li>
+        <li class="mb-5">
+          <a href="#pairit" class="mobile-menu-item">Pair it</a>
+        </li>
+        <li class="mb-5">
+          <a href="#newsletter" class="mobile-menu-item">Newsletter</a>
+        </li>
+      </ul>
+        
       </div>
       <!-- Mobile menu button -->
       <div class="absolute md:hidden right-0 p-4">
@@ -63,21 +88,22 @@
         </ul>
       </div>
     </nav>
-    <div class="relative bg-banner flex w-full object-left-top">
+    <div class=" flex w-full ">
       <img
         src="./src/Assets/powder-texture-banner.svg"
         alt=""
-        class="absolute bottom-0 w-full translate-y-3"
+        class="absolute bottom-0 translate-y-4 w-full "
       />
       <img
         src="./src/Assets/logo-banner.png"
         alt="Powdered Toast Logo"
         class="w-60 m-auto text-white align-middle"
       />
-      <a href="#about" class="w-10 absolute bottom-20 right-1/2">
+      <a href="#about" class="w-10 absolute bottom-16 left-1/2 -translate-x-4">
         <img src="./src/Assets/down-arrow.svg" alt="down arrow" />
       </a>
     </div>
+  </header>
     <!-- About Section -->
     <div class="container m-auto lg:w-1/2 bg-white mb-28">
       <div
