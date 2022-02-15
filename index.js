@@ -27,6 +27,7 @@ menuItems.forEach(item => {
 
 // Carousel Buttons and function
 function changeImage(a) {
+
     document.getElementById('carousel-image').src = a;
 }
 

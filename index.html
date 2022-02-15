@@ -170,7 +170,7 @@
             </div>
           </div>
           <div
-            class="flex mt-5"
+            class="flex mt-5 transition-opacity"
             onclick='changeImage("./src/Assets/make-it-3-fruit.jpg")'
           >
             <img
@@ -203,7 +203,7 @@
           id="carousel-image"
           src="./src/Assets/make-it-1-maple.jpg"
           alt="french toast"
-          class="w-full h-auto rounded-2xl object-contain"
+          class="w-full h-auto rounded-2xl object-contain transition-opacity"
         />
         <span
           class="absolute top-1/2 transform translate-x-6 -translate-y-1/2 right-0 carousel-right invisible md:visible"
@@ -279,7 +279,7 @@
             Here's a 5 minute video on how to make classic powdered toast in any
             kitchen.
           </p>
-          <p class="text-[8px] my-8">
+          <p class="text-xs my-16 text-lightGray">
             By
             <a href="#" class="text-poweredRed underline decoration-solid"
               >Crouton Crackerjacks</a
@@ -287,10 +287,12 @@
           </p>
         </div>
         <div class="w-5/6 m-auto md:w-2/3">
-          <img
-            src="./src/Assets/video-how-to.jpg"
-            class="w-full object-contain rounded-lg h-auto"
-          />
+          <a href="https://www.youtube.com/watch?v=r1ZLSbQORO1&t=6s" target="_blank">
+            <img
+              src="./src/Assets/video-how-to.jpg"
+              class="w-full object-contain rounded-2xl h-auto"
+            />
+          </a>
         </div>
       </div>
       <!-- Pairing it section -->
