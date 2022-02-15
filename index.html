@@ -72,8 +72,11 @@
       <img
         src="./src/Assets/logo-banner.png"
         alt="Powdered Toast Logo"
-        class="w-40 m-auto text-white align-middle"
+        class="w-60 m-auto text-white align-middle"
       />
+      <a href="#about" class="w-10 absolute bottom-20 right-1/2">
+        <img src="./src/Assets/down-arrow.svg" alt="down arrow" />
+      </a>
     </div>
     <!-- About Section -->
     <div class="container m-auto lg:w-1/2 bg-white mb-28">
@@ -395,7 +398,7 @@
             class="w-24 pb-5 m-auto"
           />
           <p class="text-lightGray text-xs uppercase mb-24">
-            &copy; 2020 Powdered Toast Company. All Rights Reserved
+            &copy; <span id="copyrightYear"></span> Powdered Toast Company. All Rights Reserved
           </p>
         </div>
       </footer>

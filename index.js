@@ -4,7 +4,7 @@ const menuClose = document.querySelector('.mobile-menu-close');
 const menuItems = document.querySelectorAll('.mobile-menu-item');
 const leftCarousel = document.querySelector('.carousel-left');
 const rightCarousel = document.querySelector('.carousel-right');
-
+const copyright = document.getElementById('copyrightYear');
 
 
 
@@ -39,3 +39,7 @@ rightCarousel.addEventListener('click', () => {
     console.log('clicked')
 
 });
+
+// Copyright Year
+
+copyright.innerHTML = new Date().getFullYear();
